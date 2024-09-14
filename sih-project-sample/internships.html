@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internships</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="internships.css">
+</head>
+<body>
+    <div class="hero-section">
+        <div class="overlay">
+            <nav class="menu">
+                <a href="index.html">Home</a>
+                <a href="jobs.html">Jobs</a>
+                <a href="internships.html">Internships</a>
+                <a href="mentorships.html">Mentorships</a>
+                <a href="resources.html">Resources</a>
+                <a href="login.html" class="login-signup" data-toggle="modal" data-target="#login-signup-popup">Login/Signup</a>
+            </nav>
+            <div class="content text-center">
+                <h1>Internships</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- Internships Section -->
+    <section id="internships" class="internships-section">
+        <div class="container">
+            <h2>Available Internships</h2>
+            <div class="row">
+                <!-- Internship Card 1 -->
+                <div class="col-md-3">
+                    <div class="card internship-card">
+                        <div class="card-body">
+                            <h5 class="card-title">Software Engineering Intern</h5>
+                            <p class="card-text">Company: Tech Innovators</p>
+                            <p class="card-text">Location: San Francisco</p>
+                            <p class="card-text">Stipend: $20,000/semester</p>
+                            <p class="card-text">Role: Assist in software development</p>
+                            <button class="btn btn-info more-btn" data-toggle="modal" data-target="#internship1-popup">More</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Internship Card 2 Example -->
+                <div class="col-md-3">
+                    <div class="card internship-card">
+                        <div class="card-body">
+                            <h5 class="card-title">Data Analysis Intern</h5>
+                            <p class="card-text">Company: AI Solutions</p>
+                            <p class="card-text">Location: New York</p>
+                            <p class="card-text">Stipend: $25,000/semester</p>
+                            <p class="card-text">Role: Data collection and analysis</p>
+                            <button class="btn btn-info more-btn" data-toggle="modal" data-target="#internship2-popup">More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal for Internship 1 -->
+    <div class="modal fade" id="internship1-popup" tabindex="-1" role="dialog" aria-labelledby="internship1PopupTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="internship1PopupTitle">Software Engineering Intern - Tech Innovators</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p><strong>Location:</strong> San Francisco</p>
+                    <p><strong>Stipend:</strong> $20,000/semester</p>
+                    <p><strong>Role:</strong> Assist in software development</p>
+                    <p><strong>Requirements:</strong> Basic knowledge of JavaScript and Python. Enrolled in a Computer Science program.</p>
+                    <p><strong>Eligibility:</strong> Currently pursuing a degree in Computer Science or related field.</p>
+                </div>
+                <div class="modal-footer">
+                    <a href="https://apply-link.com/software-engineering-intern" target="_blank" class="btn btn-success">Apply Now</a>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Internship 2 -->
+    <div class="modal fade" id="internship2-popup" tabindex="-1" role="dialog" aria-labelledby="internship2PopupTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="internship2PopupTitle">Data Analysis Intern - AI Solutions</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p><strong>Location:</strong> New York</p>
+                    <p><strong>Stipend:</strong> $25,000/semester</p>
+                    <p><strong>Role:</strong> Data collection and analysis</p>
+                    <p><strong>Requirements:</strong> Familiarity with data analysis tools. Enrolled in a Data Science program.</p>
+                    <p><strong>Eligibility:</strong> Currently pursuing a degree in Data Science or related field.</p>
+                </div>
+                <div class="modal-footer">
+                    <a href="https://apply-link.com/data-analysis-intern" target="_blank" class="btn btn-success">Apply Now</a>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer-section">
+        <div class="container">
+            <p>&copy; 2024 Job Portal. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

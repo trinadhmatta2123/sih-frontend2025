@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Private Sector Jobs</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="overseas-sector.css">
+</head>
+<body>
+    <div class="hero-section">
+        <div class="overlay">
+            <nav class="menu">
+                <a href="index.html">Home</a>
+                <a href="private-sector.html">Private Sector</a>
+                <a href="government-sector.html">Government Sector</a>
+                <a href="overseas.html">Overseas</a>
+                <a href="internships.html">Internships</a>
+                <a href="mentorships.html">Mentorships</a>
+                <a href="resources.html">Resources</a>
+                <a href="#" class="login-signup" data-toggle="modal" data-target="#login-signup-popup">Login/Signup</a>
+            </nav>
+            <div class="content text-center">
+                <h1>Private Sector Jobs</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- Private Sector Jobs Section -->
+    <section id="jobs" class="jobs-section">
+        <div class="container">
+            <h2>Available Private Sector Jobs</h2>
+            <div class="row">
+                <!-- Job Card 1 -->
+                <div class="col-md-3">
+                    <div class="card job-card">
+                        <div class="card-body">
+                            <h5 class="card-title">Software Engineer</h5>
+                            <p class="card-text">Company: TechCorp</p>
+                            <p class="card-text">Location: New York</p>
+                            <p class="card-text">Salary: $80,000 - $100,000</p>
+                            <button class="btn btn-info more-btn" data-toggle="modal" data-target="#job1-popup">More</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Job Card 2 Example -->
+                <div class="col-md-3">
+                    <div class="card job-card">
+                        <div class="card-body">
+                            <h5 class="card-title">Marketing Manager</h5>
+                            <p class="card-text">Company: MarketPro</p>
+                            <p class="card-text">Location: San Francisco</p>
+                            <p class="card-text">Salary: $70,000 - $90,000</p>
+                            <button class="btn btn-info more-btn" data-toggle="modal" data-target="#job2-popup">More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal for Job 1 -->
+    <div class="modal fade" id="job1-popup" tabindex="-1" role="dialog" aria-labelledby="job1PopupTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="job1PopupTitle">Software Engineer - TechCorp</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p><strong>Location:</strong> New York</p>
+                    <p><strong>Salary:</strong> $80,000 - $100,000</p>
+                    <p><strong>Description:</strong> Develop and maintain software applications. Collaborate with cross-functional teams.</p>
+                </div>
+                <div class="modal-footer">
+                    <a href="https://apply-link.com/software-engineer" target="_blank" class="btn btn-success">Apply Now</a>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Job 2 -->
+    <div class="modal fade" id="job2-popup" tabindex="-1" role="dialog" aria-labelledby="job2PopupTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="job2PopupTitle">Marketing Manager - MarketPro</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p><strong>Location:</strong> San Francisco</p>
+                    <p><strong>Salary:</strong> $70,000 - $90,000</p>
+                    <p><strong>Description:</strong> Manage marketing campaigns and strategies. Lead the marketing team.</p>
+                </div>
+                <div class="modal-footer">
+                    <a href="https://apply-link.com/marketing-manager" target="_blank" class="btn btn-success">Apply Now</a>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer-section">
+        <div class="container">
+            <p>&copy; 2024 Job Portal. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

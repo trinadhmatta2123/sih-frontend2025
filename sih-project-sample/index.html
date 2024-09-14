@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Portal</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Custom Styles */
+        .dropdown-toggle::after {
+            display: none; /* Remove default arrow */
+        }
+        
+        .dropdown-menu {
+            background-color: #343a40;
+        }
+        
+        .dropdown-item {
+            color: #fff;
+        }
+        
+        .dropdown-item:hover {
+            background-color: #007bff;
+            color: #fff;
+        }
+
+        .btn-jobs {
+            background-color: #007bff;
+            border: none;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 1rem;
+            font-weight: bold;
+        }
+
+        .btn-jobs:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="hero-section">
+        <div class="overlay">
+            <nav class="menu">
+                <a href="index.html">Home</a>
+                <div class="dropdown">
+                    <button class="btn btn-jobs" onclick="window.location.href='jobs.html'">Jobs</button>
+
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="private-sector.html">Private Sector</a>
+                        <a class="dropdown-item" href="government-sector.html">Government Sector</a>
+                        <a class="dropdown-item" href="overseas.html">Overseas</a>
+                    </div>
+                </div>
+                <a href="internships.html">Internships</a>
+                <a href="mentorships.html">Mentorships</a>
+                <a href="resources.html">Resources</a>
+                <a href="login.html" class="login-signup" data-toggle="modal" data-target="#login-signup-popup">Login/Signup</a>
+            </nav>
+            <div class="content text-center">
+                <h1>An Ultimate Job Portal for Seekers and Providers</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Login/Signup -->
+    <div class="modal fade" id="login-signup-popup" tabindex="-1" role="dialog" aria-labelledby="loginSignupPopupTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginSignupPopupTitle">Choose an Option</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Please choose to either log in or sign up.</p>
+                    <div class="d-flex justify-content-around">
+                        <button class="btn btn-primary" onclick="window.location.href='login.html'">Login</button>
+                        <button class="btn btn-secondary" onclick="window.location.href='signup.html'">Sign Up</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+ <!-- Jobs Section -->
+ <section id="jobs" class="jobs-section">
+    <div class="container">
+        <h2>Available Jobs</h2>
+        <div class="row">
+            <!-- Job Card 1 -->
+            <div class="col-md-3">
+                <div class="card job-card">
+                    <div class="card-body">
+                        <h5 class="card-title">Software Engineer</h5>
+                        <p class="card-text">Company: Tech Innovators</p>
+                        <p class="card-text">Location: Chennai</p>
+                        <p class="card-text">Stipend: $70,000/year</p>
+                        <p class="card-text">Role: Full-stack development</p>
+                        <button class="btn btn-info more-btn" data-toggle="modal" data-target="#job1-popup">More</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Job Card 2 Example -->
+            <div class="col-md-3">
+                <div class="card job-card">
+                    <div class="card-body">
+                        <h5 class="card-title">Data Scientist</h5>
+                        <p class="card-text">Company: AI Solutions</p>
+                        <p class="card-text">Location: Mumbai</p>
+                        <p class="card-text">Stipend: $90,000/year</p>
+                        <p class="card-text">Role: Data analysis and modeling</p>
+                        <button class="btn btn-info more-btn" data-toggle="modal" data-target="#job2-popup">More</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card job-card">
+                    <div class="card-body">
+                        <h5 class="card-title">Software Engineer</h5>
+                        <p class="card-text">Company: Tech Innovators</p>
+                        <p class="card-text">Location: Chennai</p>
+                        <p class="card-text">Stipend: $70,000/year</p>
+                        <p class="card-text">Role: Full-stack development</p>
+                        <button class="btn btn-info more-btn" data-toggle="modal" data-target="#job1-popup">More</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Job Card 2 Example -->
+            <div class="col-md-3">
+                <div class="card job-card">
+                    <div class="card-body">
+                        <h5 class="card-title">Data Scientist</h5>
+                        <p class="card-text">Company: AI Solutions</p>
+                        <p class="card-text">Location: Mumbai</p>
+                        <p class="card-text">Stipend: $90,000/year</p>
+                        <p class="card-text">Role: Data analysis and modeling</p>
+                        <button class="btn btn-info more-btn" data-toggle="modal" data-target="#job2-popup">More</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-3">
+                <div class="card job-card">
+                    <div class="card-body">
+                        <h5 class="card-title">Software Engineer</h5>
+                        <p class="card-text">Company: Tech Innovators</p>
+                        <p class="card-text">Location: Chennai</p>
+                        <p class="card-text">Stipend: $70,000/year</p>
+                        <p class="card-text">Role: Full-stack development</p>
+                        <button class="btn btn-info more-btn" data-toggle="modal" data-target="#job1-popup">More</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Job Card 2 Example -->
+            <div class="col-md-3">
+                <div class="card job-card">
+                    <div class="card-body">
+                        <h5 class="card-title">Data Scientist</h5>
+                        <p class="card-text">Company: AI Solutions</p>
+                        <p class="card-text">Location: Mumbai</p>
+                        <p class="card-text">Stipend: $90,000/year</p>
+                        <p class="card-text">Role: Data analysis and modeling</p>
+                        <button class="btn btn-info more-btn" data-toggle="modal" data-target="#job2-popup">More</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card job-card">
+                    <div class="card-body">
+                        <h5 class="card-title">Software Engineer</h5>
+                        <p class="card-text">Company: Tech Innovators</p>
+                        <p class="card-text">Location: Chennai</p>
+                        <p class="card-text">Stipend: $70,000/year</p>
+                        <p class="card-text">Role: Full-stack development</p>
+                        <button class="btn btn-info more-btn" data-toggle="modal" data-target="#job1-popup">More</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Job Card 2 Example -->
+            <div class="col-md-3">
+                <div class="card job-card">
+                    <div class="card-body">
+                        <h5 class="card-title">Data Scientist</h5>
+                        <p class="card-text">Company: AI Solutions</p>
+                        <p class="card-text">Location: Mumbai</p>
+                        <p class="card-text">Stipend: $90,000/year</p>
+                        <p class="card-text">Role: Data analysis and modeling</p>
+                        <button class="btn btn-info more-btn" data-toggle="modal" data-target="#job2-popup">More</button>
+                    </div>
+                </div>
+            </div>
+
+
+            
+        </div>
+    </div>
+</section>
+
+<!-- Modal for Job 1 -->
+<div class="modal fade" id="job1-popup" tabindex="-1" role="dialog" aria-labelledby="job1PopupTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="job1PopupTitle">Software Engineer - Tech Innovators</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p><strong>Location:</strong> San Francisco</p>
+                <p><strong>Stipend:</strong> $70,000/year</p>
+                <p><strong>Role:</strong> Full-stack development</p>
+                <p><strong>Requirements:</strong> Experience with JavaScript, Python, and React. Must have 3+ years of experience.</p>
+                <p><strong>Eligibility:</strong> B.Tech or equivalent in Computer Science.</p>
+            </div>
+            <div class="modal-footer">
+                <a href="https://nextstep.tcs.com/campus/#/" target="_blank" class="btn btn-success">Apply Now</a>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal for Job 2 -->
+<div class="modal fade" id="job2-popup" tabindex="-1" role="dialog" aria-labelledby="job2PopupTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="job2PopupTitle">Data Scientist - AI Solutions</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p><strong>Location:</strong> New York</p>
+                <p><strong>Stipend:</strong> $90,000/year</p>
+                <p><strong>Role:</strong> Data analysis and modeling</p>
+                <p><strong>Requirements:</strong> Experience in Python, machine learning, and data visualization. Must have 2+ years of experience.</p>
+                <p><strong>Eligibility:</strong> B.Sc or equivalent in Data Science or a related field.</p>
+            </div>
+            <div class="modal-footer">
+                <a href="https://www.accenture.com/in-en/careers/jobsearch?jk=&vw=0&is_rj=0&pg=1" target="_blank" class="btn btn-success">Apply Now</a>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- Footer -->
+    <footer class="footer-section">
+        <div class="container">
+            <p>&copy; 2024 Job Portal. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

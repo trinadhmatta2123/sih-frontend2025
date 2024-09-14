@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jobs</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="jobs.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html">Home</a>
+    </nav>
+
+    <div class="container my-5">
+        <h1>Available Jobs</h1>
+        
+        <div class="section private-sector">
+            <h2>Private Sector Jobs</h2>
+            <div class="row">
+                <!-- Private Sector Job Cards -->
+                <div class="col-md-4">
+                    <div class="card job-card">
+                        <div class="card-body">
+                            <h5 class="card-title">Software Engineer</h5>
+                            <p class="card-text">Company: Tech Innovators</p>
+                            <button class="btn btn-info more-btn" data-toggle="modal" data-target="#job1-popup">More</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more private sector job cards as needed -->
+            </div>
+        </div>
+
+        <div class="section government-sector">
+            <h2>Government Sector Jobs</h2>
+            <div class="row">
+                <!-- Government Sector Job Cards -->
+                <div class="col-md-4">
+                    <div class="card job-card">
+                        <div class="card-body">
+                            <h5 class="card-title">Civil Engineer</h5>
+                            <p class="card-text">Department: Public Works</p>
+                            <button class="btn btn-info more-btn" data-toggle="modal" data-target="#job2-popup">More</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more government sector job cards as needed -->
+            </div>
+        </div>
+
+        <div class="section overseas-sector">
+            <h2>Overseas Jobs</h2>
+            <div class="row">
+                <!-- Overseas Sector Job Cards -->
+                <div class="col-md-4">
+                    <div class="card job-card">
+                        <div class="card-body">
+                            <h5 class="card-title">Project Manager</h5>
+                            <p class="card-text">Company: Global Corp</p>
+                            <button class="btn btn-info more-btn" data-toggle="modal" data-target="#job3-popup">More</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more overseas job cards as needed -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Job Modals -->
+    <div class="modal fade" id="job1-popup" tabindex="-1" role="dialog" aria-labelledby="job1PopupTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="job1PopupTitle">Software Engineer - Tech Innovators</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p><strong>Location:</strong> San Francisco</p>
+                    <p><strong>Stipend:</strong> $70,000/year</p>
+                    <p><strong>Role:</strong> Full-stack development</p>
+                    <p><strong>Requirements:</strong> Experience with JavaScript, Python, and React. Must have 3+ years of experience.</p>
+                    <p><strong>Eligibility:</strong> B.Tech or equivalent in Computer Science.</p>
+                </div>
+                <div class="modal-footer">
+                    <a href="https://apply-link.com/software-engineer" target="_blank" class="btn btn-success">Apply Now</a>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="job2-popup" tabindex="-1" role="dialog" aria-labelledby="job2PopupTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="job2PopupTitle">Civil Engineer - Public Works</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p><strong>Location:</strong> Washington, D.C.</p>
+                    <p><strong>Salary:</strong> $80,000/year</p>
+                    <p><strong>Role:</strong> Civil engineering and project management</p>
+                    <p><strong>Requirements:</strong> Experience in civil engineering and project management. Must have 5+ years of experience.</p>
+                    <p><strong>Eligibility:</strong> B.E/B.Tech in Civil Engineering.</p>
+                </div>
+                <div class="modal-footer">
+                    <a href="https://apply-link.com/civil-engineer" target="_blank" class="btn btn-success">Apply Now</a>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="job3-popup" tabindex="-1" role="dialog" aria-labelledby="job3PopupTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="job3PopupTitle">Project Manager - Global Corp</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p><strong>Location:</strong> London</p>
+                    <p><strong>Salary:</strong> £60,000/year</p>
+                    <p><strong>Role:</strong> Project management and coordination</p>
+                    <p><strong>Requirements:</strong> Experience in project management and international projects. Must have 7+ years of experience.</p>
+                    <p><strong>Eligibility:</strong> Bachelor's or Master's degree in Management.</p>
+                </div>
+                <div class="modal-footer">
+                    <a href="https://apply-link.com/project-manager" target="_blank" class="btn btn-success">Apply Now</a>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer-section">
+        <div class="container">
+            <p>&copy; 2024 Job Portal. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

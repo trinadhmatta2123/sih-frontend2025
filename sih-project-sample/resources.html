@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resources</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="resources.css">
+</head>
+<body>
+    <div class="hero-section">
+        <div class="overlay">
+            <nav class="menu">
+                <a href="index.html">Home</a>
+                <a href="jobs.html">Jobs</a>
+                <a href="internships.html">Internships</a>
+                <a href="mentorships.html">Mentorships</a>
+                <a href="resources.html">Resources</a>
+                <a href="#" class="login-signup" data-toggle="modal" data-target="#login-signup-popup">Login/Signup</a>
+            </nav>
+            <div class="content text-center">
+                <h1>Resources</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- Resources Section -->
+    <section id="resources" class="resources-section">
+        <div class="container">
+            <h2>Career Development Resources</h2>
+            <div class="row">
+                <!-- Resource Card 1 -->
+                <div class="col-md-3">
+                    <div class="card resource-card">
+                        <div class="card-body">
+                            <h5 class="card-title">Resume Writing Guide</h5>
+                            <p class="card-text">Provider: CareerBoost</p>
+                            <p class="card-text">Type: eBook</p>
+                            <p class="card-text">Price: Free</p>
+                            <button class="btn btn-info more-btn" data-toggle="modal" data-target="#resource1-popup">More</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Resource Card 2 Example -->
+                <div class="col-md-3">
+                    <div class="card resource-card">
+                        <div class="card-body">
+                            <h5 class="card-title">Interview Preparation Kit</h5>
+                            <p class="card-text">Provider: JobPrep</p>
+                            <p class="card-text">Type: Online Course</p>
+                            <p class="card-text">Price: $50</p>
+                            <button class="btn btn-info more-btn" data-toggle="modal" data-target="#resource2-popup">More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal for Resource 1 -->
+    <div class="modal fade" id="resource1-popup" tabindex="-1" role="dialog" aria-labelledby="resource1PopupTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="resource1PopupTitle">Resume Writing Guide - CareerBoost</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p><strong>Type:</strong> eBook</p>
+                    <p><strong>Price:</strong> Free</p>
+                    <p><strong>Description:</strong> A comprehensive guide to writing an effective resume, including tips and examples.</p>
+                    <p><strong>Details:</strong> Includes templates and sample resumes to help you create a standout resume.</p>
+                </div>
+                <div class="modal-footer">
+                    <a href="https://download-link.com/resume-writing-guide" target="_blank" class="btn btn-success">Download Now</a>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Resource 2 -->
+    <div class="modal fade" id="resource2-popup" tabindex="-1" role="dialog" aria-labelledby="resource2PopupTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="resource2PopupTitle">Interview Preparation Kit - JobPrep</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p><strong>Type:</strong> Online Course</p>
+                    <p><strong>Price:</strong> $50</p>
+                    <p><strong>Description:</strong> An online course to help you prepare for job interviews with practice questions and expert tips.</p>
+                </div>
+                <div class="modal-footer">
+                    <a href="https://buy-link.com/interview-preparation-kit" target="_blank" class="btn btn-success">Buy Now</a>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer-section">
+        <div class="container">
+            <p>&copy; 2024 Job Portal. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
